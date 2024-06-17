@@ -1,0 +1,9 @@
+<div class="msgs" *ngIf="messageService.messages.length">
+
+  <div class="flex-container">
+    <div class="msg" *ngFor='let message of messageService.messages'>
+      <app-snackbar [message]="message.msg" />
+    </div>
+  </div>
+
+</div>
